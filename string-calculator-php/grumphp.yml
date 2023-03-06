@@ -1,4 +1,3 @@
-
 grumphp:
     hooks_dir: ~
     hooks_preset: local
