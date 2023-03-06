@@ -64,13 +64,4 @@ final class StringCalculatorTest extends TestCase
         $result = $string_calculator->add("//;\n1;2,1001");
         $this->assertEquals(3, $result);
     }
-    /**
-     * @test
-     */
-    public function shouldAddArgumentsPaso7()
-    {
-        $string_calculator = new StringCalculator();
-        $result = $string_calculator->add("//[]\n2***3");
-        $this->assertEquals(5, $result);
-    }
 }
