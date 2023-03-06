@@ -1,0 +1,17 @@
+name: PHP Continuous integration
+
+on:
+  push
+
+jobs:
+  test:
+    runs-on: windows
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: composer install
+        
+    - name: Run unit tests, Code Sniffer,Mess Detector
+      run: vendor/bin/grumphp
