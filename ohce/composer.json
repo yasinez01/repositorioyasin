@@ -1,0 +1,32 @@
+{
+    "name": "deg540/ohce",
+    "description": "Ohce",
+    "type": "project",
+    "require": {
+        "php": "^8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.10",
+        "mockery/mockery": "dev-master@dev"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Deg540\\ohce\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Deg540\\ohce\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "test": [
+            "phpunit --configuration phpunit.xml"
+        ]
+    }
+}
